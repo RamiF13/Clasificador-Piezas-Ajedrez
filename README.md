@@ -52,15 +52,15 @@ El modelo presentó una accuracy en la partición de validación de un **0.85 (8
 
 Gráfico de **training vs validation - Accuracy** 
 
-![Comparación - Training y validation - Accuracy](image.png)
+![Comparación - Training y validation - Accuracy](imagenes/Accuracy_Training_vs_Validation.png)
 
 Gráfico de **training vs validation - Loss** 
 
-![Comparación - Training y validation - Loss](image-1.png)
+![Comparación - Training y validation - Loss](imagenes/Loss_Training_vs_Validation.png)
 
 **Matriz de confusión** 
 
-![Matriz de confusion](image-2.png)
+![Matriz de confusion](imagenes/Matriz_de_confusion.png)
 
 ## **Análisis de errores**
 El modelo suele fallar en ciertos casos. Usualmente por la **similitud visual entre piezas y ángulos extremos**.
@@ -75,32 +75,32 @@ Ejemplos reales con imágenes con las que el modelo fue evaluado:
 
 **Error 1:** El rey y la dama comparten en gran parte sus características distintivas, en este caso al estar recortada y solo verse el mayor rasgo distintivo de la clase puede confundírsele con una dama. Es un error de encuadre.
 
-![Rey blanco - Dama blanca](image-4.png)
+![Rey blanco - Dama blanca](imagenes/ReyB_DamaB.png)
 
 
 **Error 2:** Pieza con mucho ruido en el fondo. La dama comparte silueta con el rey, y ante la falta de nitidez de la imagen en el detalle superior de la pieza el modelo no logra distinguirla. 
 
-![Dama blanca - Rey blanco](image-5.png)
+![Dama blanca - Rey blanco](imagenes/DamaB_ReyB.png)
 
 **Error 3:** Mismo problema que el **error 2** en un fondo similar. Distancia excesiva entre la cámara y la pieza, esta pierde calidad y el modelo no logra distinguirla del rey.
 
-![Dama negra - Rey negro](image-6.png)
+![Dama negra - Rey negro](imagenes/DamaN_ReyN.png)
 
 - **Otros ejemplos de casos de confusión:**
 
 **Error 4:** Al estar alejada, las características distintivas del alfil pierden definición viéndose más similar a una dama. 
 
-![Alfil blanco - Dama blanca](image-3.png)
+![Alfil blanco - Dama blanca](imagenes/AlfilB_DamaB.png)
 
 
 **Error 5:**  El modelo no logra aislar la pieza ya que el fondo de la imagen presenta mucho ruido, el modelo no logra captar las características distintivas del alfil. Resalta una limitación en la creación de las imágenes del dataset.
 
 
-![Alfil negro - Torre negra](image-8.png)
+![Alfil negro - Torre negra](imagenes/AlfilN_TorreN.png)
 
 **Error 6:** Se ve la pieza fuera de foco, con la cabeza del caballo girada y ocluida por la mano. Al perder el rasgo más distintivo de la clase y verse muy similar a la torre el modelo opta por ella.
 
-![Caballo blanco - Torre blanca](image-9.png)
+![Caballo blanco - Torre blanca](imagenes/CaballoB_TorreB.png)
 
 
 ## **Demo en tiempo real**
