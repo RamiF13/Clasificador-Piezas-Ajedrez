@@ -103,13 +103,19 @@ Ejemplos reales con imágenes con las que el modelo fue evaluado:
 ![Caballo blanco - Torre blanca](imagenes/CaballoB_TorreB.png)
 
 
+## **Instalación**
+
+- Cloná el repositorio:
+```bash
+git clone https://github.com/RamiF13/Clasificador-Piezas-Ajedrez.git
+``` 
+
 ## **Demo en tiempo real**
 
 Video de demostración del archivo **demo.py**:
 [Ver demo](https://youtu.be/8Jen8Au5JRQ)
 
-Para ejecutar el archivo **demo.py** en un entorno local debemos tener el archivo [modelo](https://drive.google.com/file/d/1Kx-1AYfi5yQFh6dd0-7x1BbjRlhEZHaI/view?usp=sharing) en la misma carpeta que el archivo. 
-Al presionar la letra **q** finaliza la ejecución del programa.
+Al presionar la letra **Q** finaliza la ejecución del programa.
 
 ## **Requisitos**
 
