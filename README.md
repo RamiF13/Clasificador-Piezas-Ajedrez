@@ -2,6 +2,15 @@
 
 En este proyecto lo que busco es practicar el proceso de **creación de datasets, transfer learning y clasificación por imágenes.**
 
+## **Demo en tiempo real**
+
+Video de demostración del archivo **demo.py**:
+[Ver demo](https://youtu.be/8Jen8Au5JRQ)
+
+Al presionar la letra **Q** finaliza la ejecución del programa.
+
+[Demo online](https://deteccionpiezasajedrez-app-edvjdm8orsu6pzcdyynckv.streamlit.app/)
+
 ## Clases  
 Las **categorías** en las que clasifica el modelo son las siguientes: 
 - Rey blanco
@@ -62,6 +71,10 @@ Gráfico de **training vs validation - Loss**
 
 ![Matriz de confusion](imagenes/Matriz_de_confusion.png)
 
+## **Limitaciones conocidas**
+
+El modelo fue entrenado con piezas de **estilo minimalista**. Puede presentar domain shift con piezas de diseño convencional u otros estilos distintos al del dataset original.
+
 ## **Análisis de errores**
 El modelo suele fallar en ciertos casos. Usualmente por la **similitud visual entre piezas y ángulos extremos**.
 - Estas fallas son el resultado de la similitud entre clases, entre ellas las más comunes: 
@@ -108,16 +121,13 @@ Ejemplos reales con imágenes con las que el modelo fue evaluado:
 - Cloná el repositorio:
 ```bash
 git clone https://github.com/RamiF13/Clasificador-Piezas-Ajedrez.git
+cd Clasificador-Piezas-Ajedrez
+pip install -r requirements.txt
 ``` 
 
-## **Demo en tiempo real**
-
-Video de demostración del archivo **demo.py**:
-[Ver demo](https://youtu.be/8Jen8Au5JRQ)
-
-Al presionar la letra **Q** finaliza la ejecución del programa.
-
 ## **Requisitos**
+
+Proyecto realizado con Python **3.11**
 
 Para la correcta ejecución del archivo **demo.py** deben de estar instaladas las siguientes librerías:
 - **tensorflow 2.21.0**
