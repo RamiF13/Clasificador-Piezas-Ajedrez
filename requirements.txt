@@ -1,4 +1,4 @@
-tensorflow
-keras
-numpy
-opencv-python-headless
+tensorflow 2.21.0
+keras 3.14.0
+opencv-python 4.13.0.92
+numpy 2.4.4
